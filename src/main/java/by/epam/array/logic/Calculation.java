@@ -9,28 +9,26 @@ public class Calculation {
     static Logger logger = LogManager.getLogger();
 
     public double averageElement(ArrayEntity array) {
-        logger.info("Search for the average value of array elements");
-
         double average = (double) sumElement(array) / array.size();
+
+        logger.info("Average value of array elements = " + RoundDouble.round(average));
 
         return RoundDouble.round(average);
     }
 
     public int sumElement(ArrayEntity array) {
-        logger.info("Search for the sum of array elements");
-
         int sum = 0;
 
         for (int element : array.getArray()) {
             sum += element;
         }
 
+        logger.info("Sum of array elements = " + sum);
+
         return sum;
     }
 
     public int minElement(ArrayEntity array) {
-        logger.info("Search for the min of array elements");
-
         int min = array.getElement(0);
 
         for (int element : array.getArray()) {
@@ -39,11 +37,12 @@ public class Calculation {
             }
         }
 
+        logger.info("Min of array elements = " + min);
+
         return min;
     }
 
     public int maxElement(ArrayEntity array) {
-        logger.info("Search for the max of array elements");
 
         int max = array.getElement(0);
 
@@ -53,19 +52,22 @@ public class Calculation {
             }
         }
 
+        logger.info("Max of array elements = " + max);
+
         return max;
     }
 
     public ArrayEntity elementReplacement(ArrayEntity array, int index, int number) {
-        logger.info("Start replacing an element in an array");
 
+//add index check
         array.setElement(index, number);
+
+        logger.info("After replacing an element in an array - " + array.toString());
 
         return array;
     }
 
     public int positiveElementCount(ArrayEntity array) {
-        logger.info("Search for the count of positive array elements");
 
         int count = 0;
 
@@ -75,12 +77,12 @@ public class Calculation {
             }
         }
 
+        logger.info("Count of positive array elements = " + count);
+
         return count;
     }
 
     public int negativeElementCount(ArrayEntity array) {
-        logger.info("Search for the count of negative array elements");
-
         int count = 0;
 
         for (int element : array.getArray()) {
@@ -88,6 +90,8 @@ public class Calculation {
                 count++;
             }
         }
+
+        logger.info("Count of negative array elements = " + count);
 
         return count;
     }
