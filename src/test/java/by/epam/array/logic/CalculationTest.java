@@ -19,7 +19,10 @@ public class CalculationTest {
 
     @Test
     public void testAverageElement() {
+        double actual = calculation.averageElement(testArray);
+        double expected = 28.75;
 
+        assertEquals(actual, expected);
     }
 
     @Test

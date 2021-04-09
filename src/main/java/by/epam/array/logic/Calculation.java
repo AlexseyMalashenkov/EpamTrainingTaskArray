@@ -1,6 +1,7 @@
 package by.epam.array.logic;
 
 import by.epam.array.entity.ArrayEntity;
+import by.epam.array.util.RoundDouble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,7 +11,9 @@ public class Calculation {
     public double averageElement(ArrayEntity array) {
         logger.info("Search for the average value of array elements");
 
-        return (double) sumElement(array) / array.size();
+        double average = (double) sumElement(array) / array.size();
+
+        return RoundDouble.round(average);
     }
 
     public int sumElement(ArrayEntity array) {
