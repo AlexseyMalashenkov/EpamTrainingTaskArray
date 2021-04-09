@@ -1,4 +1,4 @@
-package by.epam.task1.entity;
+package by.epam.array.entity;
 
 public class ArrayEntity {
     private int[] array;

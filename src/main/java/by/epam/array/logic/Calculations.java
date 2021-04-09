@@ -1,6 +1,6 @@
-package by.epam.task1.logic;
+package by.epam.array.logic;
 
-import by.epam.task1.entity.ArrayEntity;
+import by.epam.array.entity.ArrayEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package by.epam.task1.logic;
+package by.epam.array.logic;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
