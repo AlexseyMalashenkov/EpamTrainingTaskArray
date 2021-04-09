@@ -26,4 +26,13 @@ public class ArrayEntity {
     public int size(){
         return this.array.length;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder string = new StringBuilder();
+        for (int i: this.array) {
+            string.append(i);
+        }
+        return string.toString();
+    }
 }
