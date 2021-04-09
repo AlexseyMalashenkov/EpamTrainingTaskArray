@@ -4,7 +4,7 @@ import by.epam.array.entity.ArrayEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Calculations {
+public class Calculation {
     static Logger logger = LogManager.getLogger();
 
     public double averageElement(ArrayEntity array) {
