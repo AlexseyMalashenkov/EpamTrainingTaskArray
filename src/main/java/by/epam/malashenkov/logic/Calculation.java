@@ -1,7 +1,7 @@
-package by.epam.array.logic;
+package by.epam.malashenkov.logic;
 
-import by.epam.array.entity.ArrayEntity;
-import by.epam.array.util.RoundDouble;
+import by.epam.malashenkov.entity.ArrayEntity;
+import by.epam.malashenkov.util.RoundDouble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

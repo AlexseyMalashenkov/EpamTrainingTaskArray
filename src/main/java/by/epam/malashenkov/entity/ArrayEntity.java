@@ -1,4 +1,4 @@
-package by.epam.array.entity;
+package by.epam.malashenkov.entity;
 
 public class ArrayEntity {
     private int[] array;

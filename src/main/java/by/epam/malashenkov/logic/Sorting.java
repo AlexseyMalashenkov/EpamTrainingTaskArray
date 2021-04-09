@@ -1,6 +1,6 @@
-package by.epam.array.logic;
+package by.epam.malashenkov.logic;
 
-import by.epam.array.entity.ArrayEntity;
+import by.epam.malashenkov.entity.ArrayEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -52,6 +52,7 @@ public class Sorting {
     }
 
     public void quickSort(ArrayEntity array, int firstElement, int lastElement) {
+        logger.info("Start quick sorting the array");
 
     }
 }
