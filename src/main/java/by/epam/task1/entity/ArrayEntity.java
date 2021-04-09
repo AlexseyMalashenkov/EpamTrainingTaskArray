@@ -11,6 +11,10 @@ public class ArrayEntity {
         return this.array;
     }
 
+    public int getElement(int index){
+        return this.array[index];
+    }
+
     public void setArray(int[] array) {
         this.array = array;
     }

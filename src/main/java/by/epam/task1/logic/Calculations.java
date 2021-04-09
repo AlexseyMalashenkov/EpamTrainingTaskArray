@@ -24,4 +24,68 @@ public class Calculations {
 
         return sum;
     }
+
+    public int minElement(ArrayEntity array) {
+        logger.info("Search for the min of array elements");
+
+        int min = array.getElement(0);
+
+        for (int element : array.getArray()) {
+            if (element < min) {
+                min = element;
+            }
+        }
+
+        return min;
+    }
+
+    public int maxElement(ArrayEntity array) {
+        logger.info("Search for the max of array elements");
+
+        int max = array.getElement(0);
+
+        for (int element : array.getArray()) {
+            if (element > max) {
+                max = element;
+            }
+        }
+
+        return max;
+    }
+
+    public ArrayEntity elementReplacement(ArrayEntity array, int index, int number) {
+        logger.info("Start replacing an element in an array");
+
+        array.setElement(index, number);
+
+        return array;
+    }
+
+    public int positiveElementCount(ArrayEntity array) {
+        logger.info("Search for the count of positive array elements");
+
+        int count = 0;
+
+        for (int element : array.getArray()) {
+            if (element >= 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public int negativeElementCount(ArrayEntity array) {
+        logger.info("Search for the count of negative array elements");
+
+        int count = 0;
+
+        for (int element : array.getArray()) {
+            if (element < 0) {
+                count++;
+            }
+        }
+
+        return count;
+    }
 }
