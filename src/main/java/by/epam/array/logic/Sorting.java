@@ -50,4 +50,8 @@ public class Sorting {
             leftSide++;
         } while (leftSide < rightSide);
     }
+
+    public void quickSort(ArrayEntity array, int firstElement, int lastElement) {
+
+    }
 }
