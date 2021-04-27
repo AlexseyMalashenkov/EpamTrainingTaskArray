@@ -1,17 +1,17 @@
-package by.epam.malashenkov.logic;
+package by.malashenkov.first.logic;
 
-import by.epam.malashenkov.entity.ArrayEntity;
-import by.epam.malashenkov.util.RoundDouble;
+import by.malashenkov.first.entity.ArrayEntity;
+import by.malashenkov.first.util.RoundDouble;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Calculation {
-    static Logger logger = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public double averageElement(ArrayEntity array) {
         double average = (double) sumElement(array) / array.size();
 
-        logger.info("Average value of array elements = " + RoundDouble.round(average));
+        LOGGER.info("Average value of array elements = " + RoundDouble.round(average));
 
         return RoundDouble.round(average);
     }
@@ -23,7 +23,7 @@ public class Calculation {
             sum += element;
         }
 
-        logger.info("Sum of array elements = " + sum);
+        LOGGER.info("Sum of array elements = " + sum);
 
         return sum;
     }
@@ -37,7 +37,7 @@ public class Calculation {
             }
         }
 
-        logger.info("Min of array elements = " + min);
+        LOGGER.info("Min of array elements = " + min);
 
         return min;
     }
@@ -52,23 +52,26 @@ public class Calculation {
             }
         }
 
-        logger.info("Max of array elements = " + max);
+        LOGGER.info("Max of array elements = " + max);
 
         return max;
     }
 
-    public ArrayEntity elementReplacement(ArrayEntity array, int index, int number) {
+    public boolean elementReplacement(ArrayEntity array, int index, int number) {
+        boolean key = false;
+        if (index <= array.size() - 1) {
+            key = true;
+            array.setElement(index, number);
 
-//add index check
-        array.setElement(index, number);
+            LOGGER.info("Element replacement was successful");
+        } else {
+            LOGGER.error("Index more that array size");
+        }
 
-        logger.info("After replacing an element in an array - " + array.toString());
-
-        return array;
+        return key;
     }
 
     public int positiveElementCount(ArrayEntity array) {
-
         int count = 0;
 
         for (int element : array.getArray()) {
@@ -77,7 +80,7 @@ public class Calculation {
             }
         }
 
-        logger.info("Count of positive array elements = " + count);
+        LOGGER.info("Count of positive array elements = " + count);
 
         return count;
     }
@@ -91,7 +94,7 @@ public class Calculation {
             }
         }
 
-        logger.info("Count of negative array elements = " + count);
+        LOGGER.info("Count of negative array elements = " + count);
 
         return count;
     }

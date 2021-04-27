@@ -1,4 +1,4 @@
-package by.epam.malashenkov.util;
+package by.malashenkov.first.util;
 
 public class RoundDouble {
     public static double round(double number) {

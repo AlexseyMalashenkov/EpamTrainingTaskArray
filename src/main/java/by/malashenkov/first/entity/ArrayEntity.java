@@ -1,4 +1,4 @@
-package by.epam.malashenkov.entity;
+package by.malashenkov.first.entity;
 
 public class ArrayEntity {
     private int[] array;
@@ -32,6 +32,7 @@ public class ArrayEntity {
         StringBuilder string = new StringBuilder();
         for (int i: this.array) {
             string.append(i);
+            string.append(' ');
         }
         return string.toString();
     }

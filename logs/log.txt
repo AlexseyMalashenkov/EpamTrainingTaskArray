@@ -1,0 +1,83 @@
+2021-04-10 23:43:11 [main] INFO  Calculation:26 - Sum of array elements = 230
+2021-04-10 23:43:11 [main] INFO  Calculation:14 - Average value of array elements = 28.75
+2021-04-10 23:43:11 [main] INFO  Calculation:55 - Max of array elements = 101
+2021-04-10 23:43:11 [main] INFO  Calculation:40 - Min of array elements = -33
+2021-04-10 23:43:11 [main] INFO  Calculation:94 - Count of negative array elements = 2
+2021-04-10 23:43:11 [main] INFO  Calculation:80 - Count of positive array elements = 6
+2021-04-10 23:43:11 [main] INFO  Calculation:26 - Sum of array elements = 230
+2021-04-10 23:43:19 [main] INFO  Calculation:26 - Sum of array elements = 230
+2021-04-10 23:43:19 [main] INFO  Calculation:14 - Average value of array elements = 28.75
+2021-04-10 23:43:19 [main] INFO  Calculation:55 - Max of array elements = 101
+2021-04-10 23:43:19 [main] INFO  Calculation:40 - Min of array elements = -33
+2021-04-10 23:43:19 [main] INFO  Calculation:94 - Count of negative array elements = 2
+2021-04-10 23:43:19 [main] INFO  Calculation:80 - Count of positive array elements = 6
+2021-04-10 23:43:19 [main] INFO  Calculation:26 - Sum of array elements = 230
+2021-04-13 18:13:01 [main] INFO  Calculation:26 - Sum of array elements = 230
+2021-04-13 18:13:01 [main] INFO  Calculation:14 - Average value of array elements = 28.75
+2021-04-13 18:13:01 [main] INFO  Calculation:55 - Max of array elements = 101
+2021-04-13 18:13:01 [main] INFO  Calculation:40 - Min of array elements = -33
+2021-04-13 18:13:01 [main] INFO  Calculation:94 - Count of negative array elements = 2
+2021-04-13 18:13:01 [main] INFO  Calculation:80 - Count of positive array elements = 6
+2021-04-13 18:13:01 [main] INFO  Calculation:26 - Sum of array elements = 230
+2021-04-15 10:44:29 [main] INFO  Validator:22 - String is valid
+2021-04-15 10:44:29 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 10:48:26 [main] INFO  Validator:22 - String is valid
+2021-04-15 10:48:26 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 10:57:45 [main] INFO  Validator:22 - String is valid
+2021-04-15 10:57:45 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:14:21 [main] INFO  DataReader:25 - Success load from file
+2021-04-15 11:14:21 [main] INFO  Validator:22 - String is valid
+2021-04-15 11:14:21 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:18:00 [main] INFO  DataReader:25 - Success load from file
+2021-04-15 11:18:00 [main] INFO  Validator:22 - String is valid
+2021-04-15 11:18:00 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:18:00 [main] INFO  Calculation:66 - After replacing an element in an array - 1 100 3 4 5 6 7 8 9 
+2021-04-15 11:21:57 [main] INFO  DataReader:25 - Success load from file
+2021-04-15 11:21:57 [main] INFO  Validator:22 - String is valid
+2021-04-15 11:21:57 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:22:42 [main] INFO  DataReader:25 - Success load from file
+2021-04-15 11:22:42 [main] INFO  Validator:22 - String is valid
+2021-04-15 11:22:42 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:22:42 [main] INFO  Calculation:66 - After replacing an element in an array - 1 100 3 4 5 6 7 8 9 
+2021-04-15 11:23:01 [main] INFO  DataReader:25 - Success load from file
+2021-04-15 11:23:01 [main] INFO  Validator:22 - String is valid
+2021-04-15 11:23:01 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:23:01 [main] ERROR Calculation:68 - After replacing an element in an array
+2021-04-15 11:50:22 [main] INFO  DataReader:25 - Success load from file
+2021-04-15 11:50:22 [main] INFO  Validator:22 - String is valid
+2021-04-15 11:50:22 [main] ERROR Validator:24 - String isn't valid
+2021-04-15 11:50:22 [main] ERROR Calculation:69 - Index more that array size
+2021-04-27 09:18:21 [main] INFO  DataReader:25 - Success load from file
+2021-04-27 09:18:21 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:18:21 [main] ERROR Validator:24 - String isn't valid
+2021-04-27 09:18:21 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:18:21 [main] ERROR Calculation:68 - Index more that array size
+2021-04-27 09:18:57 [main] INFO  DataReader:25 - Success load from file
+2021-04-27 09:18:57 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:18:57 [main] ERROR Validator:24 - String isn't valid
+2021-04-27 09:18:57 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:19:12 [main] ERROR Calculation:68 - Index more that array size
+2021-04-27 09:19:39 [main] INFO  DataReader:25 - Success load from file
+2021-04-27 09:19:39 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:19:39 [main] ERROR Validator:24 - String isn't valid
+2021-04-27 09:19:39 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:19:39 [main] INFO  Calculation:66 - Element replacement was successful
+2021-04-27 09:25:08 [main] INFO  CalculationStream:22 - Average value of array elements with stream = 28.75
+2021-04-27 09:25:08 [main] INFO  CalculationStream:60 - Max of array elements with stream = 101
+2021-04-27 09:25:08 [main] INFO  CalculationStream:48 - Min of array elements with stream = -33
+2021-04-27 09:25:08 [main] INFO  CalculationStream:90 - Count of negative array elements with stream = 2
+2021-04-27 09:25:08 [main] INFO  CalculationStream:75 - Count of positive array elements with stream = 5
+2021-04-27 09:25:08 [main] INFO  CalculationStream:36 - Sum of array elements with stream = 230
+2021-04-27 09:25:39 [main] INFO  CalculationStream:22 - Average value of array elements with stream = 28.75
+2021-04-27 09:25:39 [main] INFO  CalculationStream:60 - Max of array elements with stream = 101
+2021-04-27 09:25:39 [main] INFO  CalculationStream:48 - Min of array elements with stream = -33
+2021-04-27 09:25:39 [main] INFO  CalculationStream:90 - Count of negative array elements with stream = 2
+2021-04-27 09:25:39 [main] INFO  CalculationStream:75 - Count of positive array elements with stream = 5
+2021-04-27 09:25:39 [main] INFO  CalculationStream:36 - Sum of array elements with stream = 230
+2021-04-27 09:31:15 [main] INFO  Sorting:11 - Start bubble sorting the array
+2021-04-27 09:31:56 [main] INFO  Sorting:11 - Start bubble sorting the array
+2021-04-27 09:31:56 [main] INFO  Sorting:29 - Start shaker sorting the array
+2021-04-27 09:39:33 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:39:33 [main] ERROR Validator:24 - String isn't valid
+2021-04-27 09:39:33 [main] INFO  Validator:22 - String is valid
+2021-04-27 09:45:02 [main] INFO  DataReader:25 - Success load from file

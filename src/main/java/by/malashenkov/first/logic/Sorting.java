@@ -1,14 +1,14 @@
-package by.epam.malashenkov.logic;
+package by.malashenkov.first.logic;
 
-import by.epam.malashenkov.entity.ArrayEntity;
+import by.malashenkov.first.entity.ArrayEntity;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Sorting {
-    static Logger logger = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
 
-    public void bubbleSort(ArrayEntity array) {
-        logger.info("Start bubble sorting the array");
+    public int[] bubbleSort(ArrayEntity array) {
+        LOGGER.info("Start bubble sorting the array");
 
         int tmp;
 
@@ -21,10 +21,12 @@ public class Sorting {
                 }
             }
         }
+
+        return array.getArray();
     }
 
-    public void shakerSort(ArrayEntity array) {
-        logger.info("Start shaker sorting the array");
+    public int[] shakerSort(ArrayEntity array) {
+        LOGGER.info("Start shaker sorting the array");
 
         int temp;
         int leftSide = 0;
@@ -49,10 +51,48 @@ public class Sorting {
             }
             leftSide++;
         } while (leftSide < rightSide);
+
+        return array.getArray();
     }
 
     public void quickSort(ArrayEntity array, int firstElement, int lastElement) {
-        logger.info("Start quick sorting the array");
+        LOGGER.info("Start quick sorting the array");
 
+        if (array.size() == 0) {
+            return;
+        }
+        if (firstElement >= lastElement) {
+            return;
+        }
+
+        int middle = firstElement + (lastElement - firstElement) / 2;
+        int supportElement = array.getElement(middle);
+
+        int i = firstElement;
+        int j = lastElement;
+        while (i <= j) {
+            while (array.getElement(i) < supportElement) {
+                i++;
+            }
+
+            while (array.getElement(j) > supportElement) {
+                j--;
+            }
+
+            if (i <= j) {
+                int temp = array.getElement(i);
+                array.setElement(i, array.getElement(j));
+                array.setElement(j, temp);
+                i++;
+                j--;
+            }
+        }
+
+        if (firstElement < j) {
+            quickSort(array, firstElement, j);
+        }
+        if (lastElement > i) {
+            quickSort(array, i, lastElement);
+        }
     }
 }

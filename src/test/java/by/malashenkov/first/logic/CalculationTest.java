@@ -1,6 +1,6 @@
-package by.epam.malashenkov.logic;
+package by.malashenkov.first.logic;
 
-import by.epam.malashenkov.entity.ArrayEntity;
+import by.malashenkov.first.entity.ArrayEntity;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
